@@ -9,6 +9,8 @@ class Program
     String url = ""
     var httpClient = new HttpClient();
     var html = httpClient.GetStringAsync(url).Result;
+    var htmlDocument = new HtmlDocument();
+    htmlDocument.LoadHtml(html);
 
   }
 

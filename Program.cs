@@ -17,6 +17,7 @@ class Program
     // Get temperature
     var temperatureElement = htmlDocument.DocumentNode.SelectSingleNode("//span[@class='temperature temperature--warm-primary']");
     var temperature = temperatureElement.InnerText.Trim();
+    Console.WriteLine("Temperature: " + temperature);
 
     // Get the Conditions
 

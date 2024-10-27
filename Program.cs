@@ -20,7 +20,9 @@ class Program
     Console.WriteLine("Temperature: " + temperature);
 
     // Get the Conditions
-
+    var conditionElement = htmlDocument.DocumentNode.SelectSingleNode("//span[@class= 'Precipitation-module__main-sU6qN']");
+    var conditions = conditionElement.InnerText.Trim();
+    Console.WriteLine("Conditions: " + conditions);
 
     // Location
 

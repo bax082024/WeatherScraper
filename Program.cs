@@ -25,7 +25,9 @@ class Program
     Console.WriteLine("Conditions: " + conditions);
 
     // Location
-
+    var locationElement = htmlDocument.DocumentNode.SelectSingleNode("//span[@class= 'page-header__location-name']");
+    var location = locationElement.InnerText.Trim();
+    Console.WriteLine("Location: " + location);
   }
 
 }
